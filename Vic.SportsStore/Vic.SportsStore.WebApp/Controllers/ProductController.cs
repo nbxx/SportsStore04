@@ -10,7 +10,7 @@ namespace Vic.SportsStore.WebApp.Controllers
 {
     public class ProductController : Controller
     {
-        public int PageSize = 2;
+        public int PageSize = 3;
 
         public IProductsRepository ProductsRepository { get; set; }
 
