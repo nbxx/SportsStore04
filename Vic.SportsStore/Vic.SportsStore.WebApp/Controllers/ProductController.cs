@@ -38,6 +38,5 @@ namespace Vic.SportsStore.WebApp.Controllers
 
             return View(model);
         }
-
     }
 }
