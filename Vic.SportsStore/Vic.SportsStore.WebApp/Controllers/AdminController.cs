@@ -8,6 +8,7 @@ using Vic.SportsStore.Domain.Entities;
 
 namespace Vic.SportsStore.WebApp.Controllers
 {
+    [Authorize]
     public class AdminController : Controller
     {
         private IProductsRepository repository;
@@ -16,6 +17,7 @@ namespace Vic.SportsStore.WebApp.Controllers
         {
             repository = repo;
         }
+
         public ViewResult Index()
         {
             return View(repository.Products);
@@ -55,7 +57,7 @@ namespace Vic.SportsStore.WebApp.Controllers
         public ActionResult Delete(int productId)
         {
             Product deletedProduct = repository.DeleteProduct(productId);
-            
+
             if (deletedProduct != null)
             {
                 TempData["message"] = string.Format("{0} was deleted", deletedProduct.Name);
