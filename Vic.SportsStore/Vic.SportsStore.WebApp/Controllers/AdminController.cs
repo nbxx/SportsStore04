@@ -63,6 +63,5 @@ namespace Vic.SportsStore.WebApp.Controllers
 
             return RedirectToAction("Index");
         }
-
     }
 }
