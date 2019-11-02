@@ -29,7 +29,7 @@ namespace Vic.SportsStore.WebApp
                 .PropertiesAutowired();
 
             builder
-                .RegisterInstance<IAuthProvider>(new FormsAuthProvider())
+                .RegisterInstance<IAuthProvider>(new DbAuthProvider())
                 .PropertiesAutowired();
 
             builder

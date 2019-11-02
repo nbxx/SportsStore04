@@ -77,6 +77,7 @@
     <Compile Include="Concrete\EmailSettings.cs" />
     <Compile Include="Concrete\InMemoryProductsRepository.cs" />
     <Compile Include="Entities\Cart.cs" />
+    <Compile Include="Entities\LoginUser.cs" />
     <Compile Include="Entities\Product.cs" />
     <Compile Include="Entities\ShippingDetails.cs" />
     <Compile Include="Migrations\201909072139072_InitialCreate.cs" />
@@ -90,6 +91,10 @@
     <Compile Include="Migrations\201911021930452_ProductR2.cs" />
     <Compile Include="Migrations\201911021930452_ProductR2.Designer.cs">
       <DependentUpon>201911021930452_ProductR2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911022005196_LoginUser.cs" />
+    <Compile Include="Migrations\201911022005196_LoginUser.Designer.cs">
+      <DependentUpon>201911022005196_LoginUser.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -107,6 +112,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201911021930452_ProductR2.resx">
       <DependentUpon>201911021930452_ProductR2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911022005196_LoginUser.resx">
+      <DependentUpon>201911022005196_LoginUser.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
