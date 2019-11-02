@@ -36,8 +36,9 @@ namespace Vic.SportsStore.WebApp.Controllers
             int productId,
             string returnUrl)
         {
-            Product product = repository.Products
-            .FirstOrDefault(p => p.ProductId == productId);
+            Product product = repository
+                .Products
+                .FirstOrDefault(p => p.ProductId == productId);
 
             if (product != null)
             {
